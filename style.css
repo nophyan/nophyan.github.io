@@ -17,6 +17,9 @@ body{
   text-align: center;
   color: white;
   font-family: 'Century Gothic',sans-serif;
+  animation-duration: .38s;
+  animation-fill-mode: both;
+  animation-name: slideInUp;
 }
 .box-img{
   border-radius: 50%;
@@ -36,7 +39,7 @@ body{
 .box p{
   text-align: center;
 }
-ul{
+.box ul{
   margin: 0;
   padding: 0;
 }
@@ -87,7 +90,18 @@ ul{
      transform: rotate(1turn);
   }
 }
-    
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width:960px){
   body{
     background: url(bg2.jpg);
