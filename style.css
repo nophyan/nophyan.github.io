@@ -7,12 +7,14 @@ body{
 .box{
   background: rgba(0, 0, 0, 0.4);
   padding: 30px;
-  text-align: center;
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
+  position: absolute;
+  top: 0; left: 0; bottom: 1; right: 0;
+  width: 320px;
+  height: 650px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
   color: white;
   font-family: 'Century Gothic',sans-serif;
 }
@@ -58,6 +60,34 @@ ul{
   letter-spacing: 3px;
   font-weight: 100;
 }
+.container {
+  padding: auto;
+  text-align: center;
+}
+
+.image-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border-top: 2px dashed #004D70;
+  border-right: 2px dashed #004D70;
+  border-left: 2px dashed #004D70;
+  border-bottom: 2px dashed #004D70;
+  padding: 10px;
+  animation: spin 10s infinite linear;
+}
+.image-circle img {
+  animation: spin 10s infinite reverse linear;
+  width: 100%;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+    
 @media only screen and (max-width:960px){
   body{
     background: url(bg2.jpg);
