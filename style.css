@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(bg.jpg) no-repeat;
+  background: url(img/bg.jpg) no-repeat;
   background-size: cover;
 }
 .box{
@@ -104,6 +104,6 @@ body{
 
 @media only screen and (max-width:960px){
   body{
-    background: url(bg2.jpg);
+    background: url(img/bg2.jpg);
   }
 }
